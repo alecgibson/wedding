@@ -1,16 +1,17 @@
 sudo: false
 language: node_js
 before_install:
-  - npm install -g gulp
+- npm install -g gulp
 script: gulp
 deploy:
-  - provider: gcs
-    access_key_id: GOOGL33JMGAHYXRY4FDT
-    secret_access_key:
-      secure: VtaBIf7zZp7mIcC9TpGiqlS9p1CfPLHT/q39+LyeEKKiajcx0dycQcdAFnXIiZmgCBeAGbRcy4Oexnas+HV5/sUeXFZ9wSw1yglfKLfc89mR+a1p9bxHlVXg1pM0b42Lo85qKkUIiMKsjRoY1lFltOw3lFdqsWoqsguaN6jBmstcEjqWhFCrMgJ9BHfgSeDJD7vLYlIW2LOZJFq0faTmAgqhacuzzaacq9HslWddtIo4Wy6mS+rtPRTfj0uL/IpwyUk+pfxs0neSjs2uBcn/tBUlqWdcUV4WvBDSXPSDVykiw2DZznQQs1RR9jUsDCcWy1k86cIM7MSVQOPc43YispcvQ/gfAoZqWzTVHNiHkmkiOCpiLWazMWcODDNW/wVg0WQSgR36l8tDdwEIDIkW8SkIgQ0RuLwopwjkcFyPs7vZbGrdtwyqrOPac/EyPEYmFQ1OKuXvcPHGzetnEuiGXUlgVSBS5q1CjUrTchgTj9Vk2YKMPFFLnhYKgChqzwQjIuQBRU9PvswYBpiID2K4QhyDpWFGiF2g8TBfTxaunJevwaUSSaP9x68msvWrEndCZqne9wUY0V6P1hrOa39q1RPAeLUChaN/74NR9/vOPLVlvIsQ7dvLeKG3kCEKgEqZBce3BGbc1k0tboSL1ix26FnvTo566Uvhks8CZOQls1Q=
-    bucket: vickyspence.alecgibson.co.uk
-    local-dir: dist
-    skip_cleanup: true
-    on: master
-    acl: public-read
-    detect_encoding: true
+  provider: gcs
+  access_key_id: GOOGL33JMGAHYXRY4FDT
+  secret_access_key:
+    secure: K+TleZYbf7eRadb6zqwRgG7PT3yUm3Io5WMPMIKMWFMFBa3nnlV7NOjJ70rCNvruXjfVIHxIqqkKRw6ZSr/IH+4GGPjsyXfhXPxGISNBnYe1xcLC+yyvfA/WFLrFLFzYrP78zr7mnW+gGm4mlsimwQ6JGnbmXtxFYT576YSgynqJ20noOHsGQyUhcwawo6D60BQ5P8NqaYZgCURT4l+/fLlU/GWUc4ouo9L24s/fZPj1qHJsFogbHWh5PqAqB/PaHNI+QrlYpbWJ6Gcrka05pAgOwkGPBQwIS1UaVl/9NFeJx6r9lJ8RR93ZwvwBCl6C2JXZuGBNUNXbMQBQFjjo9FDJalfAUatXTTjVt5RSqXLpRSEYUlNPI/eOTEUcz+IKm60B9/Ghseq9OPTxcrFfVZfYbx0IbRxPU8yB70MmeLsaerR8ixvFxaSXxv9AI0HtG9K9KB7gi9mAkP61omgj7k0hWAEtNblbg3GHIsedCVbeMWPPFD6V2l8XmStjujJ8gudeRA5EjzK3v43jTNQAhs6FLfxqiEfUkLFZmKxOmLGP/1DIB7gszv/eCNFFVka0tb/nHaG6rELqp1o+WOq2SlFnJVIzjuC4bGivp/3V68iCmonRP0sDL/J55rT86FhbU/h+JsP0IJrGfJfjz6LEcpdwaxg+vhg+L8B5bGwYRGw=
+  bucket: vickyspence.alecgibson.co.uk
+  local-dir: dist
+  skip_cleanup: true
+  on: master
+  acl: public-read
+  detect_encoding: true
+  
