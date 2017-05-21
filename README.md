@@ -1,8 +1,3 @@
-# Sadlands
-
-A simple static website to display information about the "Sadlands" novel.
-It uses Nunjucks for HTML templating, and Sass for styling.
-
 ## Installing
 
 The website is built with Gulp, which runs on Node.js.
